@@ -22,10 +22,11 @@ body {
 .container {
     width: 100%;
     max-width: 1440px;
-    padding-left: 20px;
-    padding-right: 20px;
+    /* padding-left: 20px;
+    padding-right: 20px; */
     margin: 0 auto;
     text-align: center;
+    /* padding: 6.25rem; */
 }
 
 .title {
@@ -245,41 +246,194 @@ body {
 
 
 /* ingredients section */
+
 .ingre-sec {
     width: 100%;
     background-color: var(--main-color-brown);
+    padding: 6.25rem;
 }
 
 .ingre-conts {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.ingre-title {
     color: var(--background-color);
 }
 
-.ingre-title p {
+.ingre-desc {
     font-size: 1.5rem;
+    color: var(--background-color);
     padding-top: 1.5rem;
-}
-
-.ingre-item-text {
-}
-
-.ingre-item-text p {
-    font-size: 1.25rem;
-}
-
-.ingre-item-text h3 {
-    font-size: 2rem;
-    padding-top: 1rem;
+    padding-bottom: 5rem;
 }
 
 .ingre-wrap {
     display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
 }
-
 
 .ingre-item {
-    color: var(--background-color);
+    width: calc((100% - 3rem) / 3);
+
+    position: relative;
+    overflow: hidden;
+    border-radius: 1.875rem;
+    aspect-ratio: 1.25 / 1;
+    cursor: pointer;
+}
+
+.ingre-img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
 
 }
+
+.ingre-item::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+
+    background-color: rgba(0, 0, 0, 0.45);
+
+    opacity: 0;
+    transition: 0.3s;
+}
+
+/* hover 글씨 */
+.ingre-text {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--background-color);
+    text-align: center;
+
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.ingre-text p {
+    margin: 0 0 0.5rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+}
+
+.ingre-text h3 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+/* 마우스 올렸을 때 */
+.ingre-item:hover::before {
+    opacity: 1;
+}
+
+.ingre-item:hover .ingre-text {
+    opacity: 1;
+}
+
+/* checkpoint secttion */
+
+.check-sec {
+    overflow: hidden;
+    padding: 6.25rem;
+}
+
+.check-title {
+    color: var(--main-color-brown);
+
+}
+
+.check-slider {
+    position: relative;
+    width: 100%;
+}
+
+.check-window {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.check-box {
+    display: flex;
+    gap: 1.5rem;
+    transform: translateX(calc((100% - 759px) / 2 - (759px + 1.5rem)));
+}
+
+.check-card {
+    flex: 0 0 759px;
+    width: 759px;
+    height: 375px;
+    margin: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #432817;
+    gap: 3.125rem;
+}
+
+.check-card-text {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.check-card-text h2 {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.check-card-text p {
+    font-size: 1.25rem;
+    line-height: 1.2;
+}
+
+.check-tag {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.check-tag p {
+    padding: 0.625rem;
+    gap: 0.75rem;
+    border: 1px solid var(--main-color-brown);
+    border-radius: 100px;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
 
 
 
@@ -397,6 +551,35 @@ body {
         padding-top: 1.75rem;
     }
 
+    /* ingredients section */
+
+    .ingre-sec {
+        padding: 0rem;
+    }
+
+    .ingre-title {
+        font-size: 1.875rem;
+    }
+
+    .ingre-desc {
+        font-size: 1.125rem;
+    }
+
+    .ingre-text p {
+        font-size: 1.125rem;
+    }
+
+    .ingre-text h3 {
+        font-size: 1.375rem;
+    }
+
+    .ingre-wrap {
+        gap: 1.125rem;
+    }
+
+    .ingre-wrap .ingre-item {
+        width: calc((100% - 1.125rem) / 2);
+    }
 
 
 

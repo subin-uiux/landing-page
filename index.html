@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YUNDAR</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./assets/css/font.css">
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -104,62 +106,127 @@
         </div>
     </section>
 
+    <!-- ingredients section -->
+
     <section class="ingre-sec ">
         <div class="container ingre-conts">
-            <h2 class="title">
+            <h2 class="title ingre-title">
                 건강한 윤달베이커리 삼각이 재료
             </h2>
-            <p>
+            <p class="ingre-desc">
                 윤달은 100% 우리 통밀과 식물성 원재료를 사용해 건강한 포만감과 깊은 풍미를 담아냅니다
             </p>
-
             <div class="ingre-wrap">
                 <div class="ingre-item">
-                    <div class="ingre-item-text">
-                        <img src="./assets/images/통밀.png" alt="통밀">
+                    <img src="./assets/images/통밀.png" alt="통밀" class="ingre-img">
+                    <div class="ingre-text">
                         <p>비정제 통곡물, 식이섬유가 풍부한</p>
                         <h3>통밀</h3>
                     </div>
                 </div>
+
                 <div class="ingre-item">
-                    <div class="ingre-item-text">
-                        <img src="./assets/images/현미 미강.png" alt="현대 미강">
+                    <img src="./assets/images/현미 미강.png" alt="현미 미강" class="ingre-img">
+                    <div class="ingre-text">
                         <p>혈액순환 및 장 기능을 개선하는</p>
-                        <h3>현대 미강</h3>
+                        <h3>현미 미강</h3>
                     </div>
                 </div>
+
                 <div class="ingre-item">
-                    <div class="ingre-item-text">
-                        <img src="./assets/images/무첨가두유.png" alt="">
+                    <img src="./assets/images/무첨가두유.png" alt="무첨가 두유" class="ingre-img">
+                    <div class="ingre-text">
                         <p>오직 콩과 소금만으로 만든</p>
                         <h3>무첨가 두유</h3>
                     </div>
                 </div>
+
                 <div class="ingre-item">
-                    <div class="ingre-item-text">
-                        <img src="./assets/images/알룰로스.png" alt="">
+                    <img src="./assets/images/알룰로스.png" alt="알룰로스" class="ingre-img">
+                    <div class="ingre-text">
                         <p>설탕과 유사한 단 맛, 10g 당 당류 0.1g</p>
                         <h3>알룰로스</h3>
                     </div>
                 </div>
+
                 <div class="ingre-item">
-                    <div class="ingre-item-text">
-                        <img src="./assets/images/마스코바도.png" alt="">
+                    <img src="./assets/images/마스코바도.png" alt="마스코바도" class="ingre-img">
+                    <div class="ingre-text">
                         <p>100% 유기농 비정제원당</p>
                         <h3>마스코바도</h3>
                     </div>
                 </div>
+
                 <div class="ingre-item">
-                    <div class="ingre-item-text">
-                        <img src="./assets/images/현미유.png" alt="">
+                    <img src="./assets/images/현미유.png" alt="현미유" class="ingre-img">
+                    <div class="ingre-text">
                         <p>트랜스 지방 Zero, 영양소가 살아있는</p>
                         <h3>현미유</h3>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- checkpoint section -->
+    <section class="check-sec">
+        <div class="container check-conts">
+            <p class="title check-title">
+                삼각이 Checkpoint
+            </p>
+            <div class="check-slider">
+
+                <div class="check-window swiper myswiper">
+                    <div class="check-box swiper-wrapper">
+                        <div class="check-card swiper-slide">
+                            <img src="./assets/images/check1.png" alt="풍미">
+                            <div class="check-card-text">
+                                <h2>재료 본연의 맛이 진해요</h2>
+                                <p>
+                                    견과류와 같은 고품질 원재료를 아낌없이 넣어 <br>
+                                    고급스럽고 진한 풍미를 느낄 수 있어요
+                                </p>
+                                <div class="check-tag">
+                                    <p>#견과류</p>
+                                    <p>#풍미</p>
+                                    <p>#진한맛</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="check-card swiper-slide">
+                            <img src="./assets/images/check2.png" alt="비건">
+                            <div class="check-card-text">
+                                <h2>윤달 비건 라인</h2>
+                                <p>
+                                    버터, 우유, 계란 없이 식물성 식재료를 사용해<br>
+                                    속이 편해요
+                                </p>
+                                <div class="check-tag">
+                                    <p>#비건</p>
+                                    <p>#식물성</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="check-card swiper-slide">
+                            <img src="./assets/images/check3.png" alt="곡물">
+                            <div class="check-card-text">
+                                <h2>비정제 통곡물 100%</h2>
+                                <p>영양학적 가치가 높은 국내산 통밀로 만들었어요</p>
+                                <div class="check-tag">
+                                    <p>#비정제</p>
+                                    <p>#통밀</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                 </div>
 
-
             </div>
+
         </div>
 
     </section>
@@ -170,8 +237,15 @@
 
 
 
-
-
+    <script>
+      var swiper = new Swiper('.mySwiper', {
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
 </body>
 
 </html>
