@@ -174,55 +174,82 @@
             <p class="title check-title">
                 삼각이 Checkpoint
             </p>
-            <div class="check-slider">
 
-                <div class="check-window swiper myswiper">
-                    <div class="check-box swiper-wrapper">
-                        <div class="check-card swiper-slide">
-                            <img src="./assets/images/check1.png" alt="풍미">
-                            <div class="check-card-text">
-                                <h2>재료 본연의 맛이 진해요</h2>
-                                <p>
-                                    견과류와 같은 고품질 원재료를 아낌없이 넣어 <br>
-                                    고급스럽고 진한 풍미를 느낄 수 있어요
-                                </p>
-                                <div class="check-tag">
-                                    <p>#견과류</p>
-                                    <p>#풍미</p>
-                                    <p>#진한맛</p>
-                                </div>
-                            </div>
-                        </div>
 
-                        <div class="check-card swiper-slide">
-                            <img src="./assets/images/check2.png" alt="비건">
-                            <div class="check-card-text">
-                                <h2>윤달 비건 라인</h2>
-                                <p>
-                                    버터, 우유, 계란 없이 식물성 식재료를 사용해<br>
-                                    속이 편해요
-                                </p>
-                                <div class="check-tag">
-                                    <p>#비건</p>
-                                    <p>#식물성</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="check-card swiper-slide">
-                            <img src="./assets/images/check3.png" alt="곡물">
-                            <div class="check-card-text">
-                                <h2>비정제 통곡물 100%</h2>
-                                <p>영양학적 가치가 높은 국내산 통밀로 만들었어요</p>
-                                <div class="check-tag">
-                                    <p>#비정제</p>
-                                    <p>#통밀</p>
-                                </div>
+            <div class="swiper mySwiper ">
+                <div class="swiper-wrapper check-box">
+                    <div class="check-card swiper-slide">
+                        <img src="./assets/images/check1.png" alt="풍미">
+                        <div class="check-card-text">
+                            <h2>재료 본연의 맛이 진해요</h2>
+                            <p>
+                                견과류와 같은 고품질 원재료를 아낌없이 넣어 <br>
+                                고급스럽고 진한 풍미를 느낄 수 있어요
+                            </p>
+                            <div class="check-tag">
+                                <p>#견과류</p>
+                                <p>#풍미</p>
+                                <p>#진한맛</p>
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
+                    <div class="check-card swiper-slide">
+                        <img src="./assets/images/check2.png" alt="비건">
+                        <div class="check-card-text">
+                            <h2>윤달 비건 라인</h2>
+                            <p>
+                                버터, 우유, 계란 없이 식물성 식재료를 사용해<br>
+                                속이 편해요
+                            </p>
+                            <div class="check-tag">
+                                <p>#비건</p>
+                                <p>#식물성</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="check-card swiper-slide">
+                        <img src="./assets/images/check3.png" alt="곡물">
+                        <div class="check-card-text">
+                            <h2>비정제 통곡물 100%</h2>
+                            <p>영양학적 가치가 높은 국내산 통밀로 만들었어요</p>
+                            <div class="check-tag">
+                                <p>#비정제</p>
+                                <p>#통밀</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 맛있게 먹는 방법 -->
+    <section class="howto-sec">
+        <div class="container howto-conts">
+            <h2 class="title howto-title">취향에 따라 맛있게 먹는 법</h2>
+
+            <div class="howto-box">
+                <div class="howto howto-ice">
+                    <img src="./assets/images/냉장고 아이콘.png" alt="냉장고아이콘">
+                    <h2>활먹</h2>
+                    <p>해동하시고 바로 드시면 더욱 촉촉하고<br>
+                        부드러운 식감을 느끼실 수 있어요! </p>
+                </div>
+
+                <div class="howto howto-airfrier">
+                    <img src="./assets/images/에프 사진.png" alt="에프아이콘">
+                    <h2>에프굽 얼먹 ⭐</h2>
+                    <p>180도에서 10분, 뒤집어 5분 구운 뒤 식혀주세요<br> 냉동 3시간 후 겉은 콰삭, 속은 꾸덕해져요! </p>
+                </div>
+                
+                <div class="howto howto-drinks">
+                    <img src="./assets/images/커피, 우유 아이콘.png" alt="마실거리아이콘">
+                    <h2>커피, 우유와 함께</h2>
+                    <p>커피와 우유랑 함께 드시면 더욱 부드럽고<br>
+                        맛있게 삼각이를 즐기실 수 있습니다! </p>
                 </div>
 
             </div>
@@ -237,15 +264,25 @@
 
 
 
-    <script>
-      var swiper = new Swiper('.mySwiper', {
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-      });
-    </script>
+    <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.mySwiper', {
+            loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            slidesPerView: 'auto',
+            spaceBetween: 30,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
 </body>
 
 </html>
