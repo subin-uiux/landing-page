@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YUNDAR</title>
 
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./assets/css/font.css">
     <link rel="stylesheet" href="./assets/css/reset.css">
@@ -53,7 +53,15 @@
     <section class="container intro-sec">
         <div class="intro-conts">
             <h2 class="intro-title">100% 통밀 + 고식이섬유 + 비건 =</h2>
-            <img src="./assets/images/intro-img.png" alt="인트로 스콘 사진">
+
+            <div class="intro-img">
+                <img class="intro-bracket intro-bracket-left" src="./assets/images/대괄호왼.png" intro-bracket alt="">
+
+                <img class="intro-scone" src="./assets/images/intro-scone.png" alt="삼각 비건 스콘">
+
+                <img class="intro-bracket intro-bracket-right" src="./assets/images/대괄호오.png" alt="">
+            </div>
+
             <h2 class="intro-subtitle">SAMGAK</h2>
             <p>100% 우리 통밀로 만든 고식이섬유 비건 스콘 </p>
         </div>
@@ -63,7 +71,7 @@
     <section class="painpoint-sec">
         <div class="container pain-point">
             <div class="pain-point-conts">
-                <div class="pain-point-item">
+                <div class="pain-point-item" data-aos="fade-down" data-aos-duration="1500">
                     <img class="quot" src="./assets/images/quot1.png" alt="따옴표1">
                     <p class="pain-point-text">
                         다이어트 중에 맛있으면서도<br>
@@ -71,7 +79,7 @@
                     </p>
                     <img class="quot" src="./assets/images/quot2.png" alt="따옴표2">
                 </div>
-                <div class="pain-point-item">
+                <div class="pain-point-item" data-aos="fade-down" data-aos-duration="1700">
                     <img class="quot" src="./assets/images/quot1.png" alt="따옴표1">
                     <p class="pain-point-text">
                         비건을 시작하고 싶은데<br>
@@ -79,7 +87,7 @@
                     </p>
                     <img class="quot" src="./assets/images/quot2.png" alt="따옴표2">
                 </div>
-                <div class="pain-point-item">
+                <div class="pain-point-item" data-aos="fade-down" data-aos-duration="1900">
                     <img class="quot" src="./assets/images/quot1.png" alt="따옴표1">
                     <p class="pain-point-text">
                         하루하루가 너무 바빠서<br>
@@ -419,8 +427,8 @@
         <div class="container buy-conts">
             <div class="buy-wrap">
 
-                    <h2>건강한 한 끼, 삼각이 지금 만나보세요</h2>
-                    <button>구매하러 가기 →</button>
+                <h2>건강한 한 끼, 삼각이 지금 만나보세요</h2>
+                <button>구매하러 가기 ⮕</button>
 
             </div>
         </div>
@@ -469,7 +477,14 @@
             },
         });
     </script>
+
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js"
+        integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
     <script src="./assets/script/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

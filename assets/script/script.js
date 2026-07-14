@@ -1,3 +1,5 @@
+
+
 document.addEventListener("DOMContentLoaded", function () {
     const reviewSwiperElement = document.querySelector(".reviewSwiper");
     const reviewWrapper = reviewSwiperElement.querySelector(".swiper-wrapper");
@@ -47,4 +49,37 @@ document.addEventListener("DOMContentLoaded", function () {
         // 마우스나 손가락으로 움직이지 못하게 설정
         allowTouchMove: false,
     });
+});
+
+$(function () {
+  const $introImg = $(".intro-img");
+
+  function showIntroImage() {
+    // 현재 스크롤된 거리
+    const scrollTop = $(window).scrollTop();
+
+    // 브라우저 화면 높이
+    const windowHeight = $(window).height();
+
+    // intro-img가 문서 위쪽에서 얼마나 떨어져 있는지
+    const introTop = $introImg.offset().top;
+
+    // 화면 위에서부터 80% 지점을 기준으로 실행
+    const triggerPoint = scrollTop + windowHeight * 0.7;
+
+    
+
+    if (triggerPoint >= introTop) {
+      $introImg.addClass("active");
+
+      // 한 번 실행된 후에는 스크롤 검사 종료
+      $(window).off("scroll", showIntroImage);
+    }
+  }
+
+  // 스크롤할 때마다 실행
+  $(window).on("scroll", showIntroImage);
+
+  // 새로고침했을 때 이미 화면 안에 있는지도 확인
+  showIntroImage();
 });
