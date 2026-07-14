@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YUNDAR</title>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css" />
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./assets/css/font.css">
     <link rel="stylesheet" href="./assets/css/reset.css">
@@ -180,7 +180,7 @@
             </p>
 
 
-            <div class="swiper mySwiper ">
+            <div class="swiper checkSwiper ">
                 <div class="swiper-wrapper check-box">
                     <div class="check-card swiper-slide">
                         <img src="./assets/images/check1.png" alt="풍미">
@@ -304,8 +304,9 @@
     <section class="review-sec">
         <div class="container review-conts">
             <h2 class="title review-title">누적리뷰 24,099건</h2>
-            <div class="swiper mySwiper">
-                <div class="review-box swiper-wrapper">
+
+            <div class="swiper reviewSwiper">
+                <div class="review-wrap swiper-wrapper">
                     <div class="review-card swiper-slide">
                         <img src="./assets/images/리뷰1사진.png" alt="리뷰1">
                         <div class="review-text">
@@ -322,72 +323,106 @@
                             </div>
                         </div>
                     </div>
-                    <div class="review-box">
-                        <div class="review-card">
-                            <img src="./assets/images/리뷰2 사진.png" alt="리뷰1">
-                            <div class="review-text">
-                                <p>작명센스가ㅋㅋㅋ
-                                    두 맛 다 잘 느껴지는데 치즈가 짭짤한 맛이 더 잘 나요!
-                                    블랙부분도 많이 단 편이 아니라서 짠맛이 더 잘 느껴졌나봐요!
-                                </p>
-                                <div class="review-score-box">
-                                    <div class="review-score">
-                                        <span>★★★★★</span>
-                                        <p class="review-info">/ sang*******</p>
-                                    </div>
-                                    <p class="review-info">2026.03.01</p>
+                    <div class="review-card swiper-slide">
+                        <img src="./assets/images/리뷰2 사진.png" alt="리뷰2">
+                        <div class="review-text">
+                            <p>작명센스가ㅋㅋㅋ
+                                두 맛 다 잘 느껴지는데 치즈가 짭짤한 맛이 더 잘 나요!
+                                블랙부분도 많이 단 편이 아니라서 짠맛이 더 잘 느껴졌나봐요!
+                            </p>
+                            <div class="review-score-box">
+                                <div class="review-score">
+                                    <span>★★★★★</span>
+                                    <p class="review-info">/ sang*******</p>
                                 </div>
+                                <p class="review-info">2026.03.01</p>
                             </div>
                         </div>
                     </div>
-                    <div class="review-box">
-                        <div class="review-card">
-                            <img src="./assets/images/리뷰3 사진.png" alt="리뷰1">
-                            <div class="review-text">
-                                <p>ㅎr.. 진짜 이렇게 성분좋은 스콘 어디에도 없어요🥹
-                                    맛도 진하고 너무 맛있고, 한 개만 먹는게 어려울 정도입니다,,
-                                    원래 황친자인데.. 삼각이 먹고 쑥에 빠져서.. 다음에 쑥으로 쟁이려고 합니다💚
-                                    하 진짜 계속 팔아주시고 또 팔아주시고.. 쑥 없애지 말아주시고.. 감사합니댜
-                                    그리고 에프굽이 유명한 스콘인데 자취생이다 보니 에프없이 살아서 걱정했는데,
-                                    그냥 얼먹으로 멋어도 넘 맛있어서 행복했습니댜
-                                </p>
-                                <div class="review-score-box">
-                                    <div class="review-score">
-                                        <span>★★★★★</span>
-                                        <p class="review-info">/ dlsd********</p>
-                                    </div>
-                                    <p class="review-info">2026.06.06</p>
+                    <div class="review-card swiper-slide">
+                        <img src="./assets/images/리뷰3 사진.png" alt="리뷰3">
+                        <div class="review-text">
+                            <p>ㅎr.. 진짜 이렇게 성분좋은 스콘 어디에도 없어요🥹
+                                맛도 진하고 너무 맛있고, 한 개만 먹는게 어려울 정도입니다,,
+                                원래 황친자인데.. 삼각이 먹고 쑥에 빠져서.. 다음에 쑥으로 쟁이려고 합니다💚
+                                하 진짜 계속 팔아주시고 또 팔아주시고.. 쑥 없애지 말아주시고.. 감사합니댜
+                                그리고 에프굽이 유명한 스콘인데 자취생이다 보니 에프없이 살아서 걱정했는데,
+                                그냥 얼먹으로 멋어도 넘 맛있어서 행복했습니댜
+                            </p>
+                            <div class="review-score-box">
+                                <div class="review-score">
+                                    <span>★★★★★</span>
+                                    <p class="review-info">/ dlsd********</p>
                                 </div>
+                                <p class="review-info">2026.06.06</p>
                             </div>
                         </div>
                     </div>
-                    <div class="review-box">
-                        <div class="review-card">
-                            <img src="./assets/images/리뷰4 사진.png" alt="리뷰1">
-                            <div class="review-text">
-                                <p>윤달 ㅎㅎ 이번에도 신랑이 장바구니보고 주문 해줬어용 ㅎ
-                                    저보다 신랑이 좋아해서 사주는거같은생각이 ㅎㅎ
-                                    무튼 맛있고 이쁘지만 무엇보다 영양적으로 만족해요
-                                    당충전이 필요할 때 건강까지 생각해서 먹을수있어 좋아요~
-                                    성분도 맘에 듭니다 ㅎㅎ
-                                    당연 재구매죠~!
-                                    요거트랑 찰떡입니다아 ㅎㅎ
-                                </p>
-                                <div class="review-score-box">
-                                    <div class="review-score">
-                                        <span>★★★★★</span>
-                                        <p class="review-info">/ ster******</p>
-                                    </div>
-                                    <p class="review-info">2026.06.02</p>
+                    <div class="review-card swiper-slide">
+                        <img src="./assets/images/리뷰4 사진.png" alt="리뷰4">
+                        <div class="review-text">
+                            <p>윤달 ㅎㅎ 이번에도 신랑이 장바구니보고 주문 해줬어용 ㅎ
+                                저보다 신랑이 좋아해서 사주는거같은생각이 ㅎㅎ
+                                무튼 맛있고 이쁘지만 무엇보다 영양적으로 만족해요
+                                당충전이 필요할 때 건강까지 생각해서 먹을수있어 좋아요~
+                                성분도 맘에 듭니다 ㅎㅎ
+                                당연 재구매죠~!
+                                요거트랑 찰떡입니다아 ㅎㅎ
+                            </p>
+                            <div class="review-score-box">
+                                <div class="review-score">
+                                    <span>★★★★★</span>
+                                    <p class="review-info">/ ster******</p>
                                 </div>
+                                <p class="review-info">2026.06.02</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-card swiper-slide">
+                        <img src="./assets/images/리뷰5.png" alt="리뷰5">
+                        <div class="review-text">
+                            <p>디저트 처돌이라, 성분 좋으면서 식단 대체할 수 있는 류로 찾다가 윤달 스콘 유명한 거 같아 믿고 첫 구매이지만 대량 구매해봤습니다.
+                                받자마자 바로 얼려두고, 냉장해동or에프굽으로 먹으려고용.
+                                예상만큼의 두툼한 크기라 포만감 좋아용.
+                            </p>
+                            <div class="review-score-box">
+                                <div class="review-score">
+                                    <span>★★★★★</span>
+                                    <p class="review-info">/euns******</p>
+                                </div>
+                                <p class="review-info">2026.07.12</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-card swiper-slide">
+                        <img src="./assets/images/리뷰6.png" alt="리뷰1">
+                        <div class="review-text">
+                            <p>꾸준히 찾게되는 스콘중 원탑 윤달스콘 너무 사랑합니다~ 이번주도 재구매합니다
+                            </p>
+                            <div class="review-score-box">
+                                <div class="review-score">
+                                    <span>★★★★★</span>
+                                    <p class="review-info">/hs5o***</p>
+                                </div>
+                                <p class="review-info">2026.07.12</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
 
 
+    <!-- buy section -->
+    <section class="buy-sec">
+        <div class="container buy-conts">
+            <div class="buy-wrap">
 
+                    <h2>건강한 한 끼, 삼각이 지금 만나보세요</h2>
+                    <button>구매하러 가기 →</button>
+
+            </div>
         </div>
     </section>
 
@@ -396,27 +431,45 @@
 
 
 
-
-    
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
 
     <!-- Initialize Swiper -->
+
+    </script>
     <script>
-        var swiper = new Swiper('.mySwiper', {
+        var swiper = new Swiper('.checkSwiper', {
             loop: true,
             autoplay: {
                 delay: 2500,
                 disableOnInteraction: false,
             },
             slidesPerView: 'auto',
-            spaceBetween: 30,
+            spaceBetween: 20,
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
             },
         });
     </script>
+    <script>
+        var swiper = new Swiper('.reviewSwiper', {
+            speed: 7000,
+            loop: true,
+            autoplay: {
+                delay: 0,
+                disableOnInteraction: false,
+            },
+            slidesPerView: 'auto',
+            centeredSlides: true,
+            spaceBetween: 30,
+
+            pagination: {
+                clickable: true,
+            },
+        });
+    </script>
+    <script src="./assets/script/script.js"></script>
 </body>
 
 </html>
