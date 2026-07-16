@@ -576,11 +576,123 @@ body {
 
 /* menu section */
 
-.menu-sec {
+.flavor-sec {
     width: 100%;
     overflow: hidden;
+}
+
+.flavor-conts {
+    width: 100%;
+    max-width: 1920px;
+
+    margin: 0;
+    padding: 6.25rem 0rem 6.25rem 15rem;
+}
+
+.flavor-title {
+    padding-bottom: 5rem;
+    text-align: left;
+    color: var(--main-color-brown);
+}
+
+.flavor-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    min-height: 400px;
+    gap: 10rem;
+}
+
+.flavor-tab {
+    display: flex;
+    flex-direction: column;
+    gap: 2.75rem;
+}
+
+.flavor-tab button {
+    border: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--main-color-brown);
+    display: flex;
+}
+
+.flavor-window {
+    overflow: visible;
+    display: flex;
+    gap: 14rem;
+}
+
+.product-track {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.flavor-scone-img {
+    width: 360px;
+    height: 360px;
+}
+
+
+.product-img {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-img .pink-circle {
+    position: absolute;
+    top: 46%;
+    left: 64%;
+
+    transform: translate(-50%, -50%);
+}
+
+.pink-circle {
+    position: absolute;
+    z-index: 1;
 
 }
+
+.product-img img:first-child {
+    position: relative;
+    z-index: 2;
+}
+
+.other-scone {
+    opacity: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-shrink: 0;
+    gap: 2.5rem;
+}
+
+.other-scone img {
+    width: 260px;
+    height: auto;
+}
+
+
+.product-text {
+    color: var(--main-color-brown);
+}
+
+.product-text h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding-bottom: 0.625rem;
+}
+
+.product-text p {
+    font-size: 1.125rem;
+}
+
+
 
 
 /* review section */
@@ -663,6 +775,9 @@ body {
 
 
 /* buy section */
+.buy-sec .container {
+    padding: 0;
+}
 
 .buy-sec {
     width: 100%;
@@ -673,8 +788,8 @@ body {
     background: url(../images/buy-img.png) no-repeat center / cover;
 }
 
-.buy-conts {
-    padding: 19rem 15.875rem;
+.buy-wrap {
+    padding: 18.5625rem 15rem;
 }
 
 .buy-wrap h2 {
@@ -701,6 +816,66 @@ body {
     transition-duration: 0.4s;
     backdrop-filter: blur(20px);
 }
+
+
+/* footer */
+.footer {
+    width: 100%;
+    height: 356px;
+    margin: 0 auto;
+    padding: 0;
+    background-color: var(--sub-color-red);
+    color: var(--background-color);
+}
+
+.footer-logo {
+    font-family: 'IBM Plex Sans';
+    font-weight: 900;
+    font-size: 2.5rem;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    padding: 4.5rem 18.125rem;
+    gap: 1.625rem;
+}
+
+.info-list {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.info-text-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+}
+
+.info-text-wrap ul {
+    display: flex;
+    gap: 0.625rem;
+}
+
+.info-text-wrap p {
+    color: var(--background-color);
+    padding-top: 1.25rem;
+}
+
+.info-contact-text li {
+    font-weight: 400;
+    padding-bottom: 0.625rem;
+}
+
+.business-info {
+    text-decoration: none;
+    color: var(--background-color);
+    font-weight: 700;
+}
+
+
+
 
 
 
@@ -1004,7 +1179,6 @@ body {
         overflow: hidden;
     }
 
-
     .review-card img {
         display: block;
         flex-shrink: 0;
@@ -1016,14 +1190,83 @@ body {
 
     }
 
-
     .review-score-box {
         display: flex;
         flex-direction: column;
     }
 
 
+    /* buy section */
+    .buy-sec .container {
+        padding: 0;
+    }
+
+    .buy-sec {
+        width: 100%;
+        height: 500px;
+        position: relative;
+    }
+
+    .buy-wrap {
+        padding: 11.5625rem 5.125rem;
+
+    }
+
+    .buy-wrap h2 {
+        font-size: 2.625rem;
+    }
+
+    .buy-wrap button {
+        font-size: 1.125rem;
+        padding: 1rem 1.5625rem;
+        margin-top: 1.875rem;
+    }
+
+    /* footer */
+
+    .footer {
+        width: 100%;
+        height: 414px;
+    }
+
+    .footer-info {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding: 3.75rem 6.875rem;
+        gap: 1rem;
+    }
+
+    .info-list {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .info-text-wrap {
+        font-size: 0.875rem;
+    }
+
+    .info-text-wrap ul {
+        gap: 0.625rem;
+    }
+
+    .info-text-wrap p {
+        padding-top: 0.625rem;
+    }
+
+    .info-contact-text li {
+        font-size: 0.875rem;
+        padding-bottom: 0.625rem;
+
+    }
+
+    .copyright {
+        font-size: 0.875rem;
+    }
+
+
 }
+
 
 @media(max-width: 767px) {
 
@@ -1103,7 +1346,8 @@ body {
     }
 
     .intro-scone {
-        width: 200px;
+        width: 260px;
+        height: 260px;
         display: flex;
         margin: 0 auto;
     }
@@ -1111,9 +1355,11 @@ body {
     /* 양쪽 괄호 공통 */
 
     .intro-bracket {
-        width: 3.375rem;
-        height: 12.25rem;
+        width: 70px;
+        height: 262px;
     }
+
+    .intro-img {}
 
 
     /* painpoint section */
@@ -1321,6 +1567,65 @@ body {
     .review-score-box {
         font-size: 0.75rem;
         padding-top: 0.625;
+    }
+
+    /* buy section */
+    .buy-sec .container {
+        padding: 0;
+    }
+
+    .buy-sec {
+        width: 100%;
+        height: 395px;
+        position: relative;
+    }
+
+    .buy-wrap {
+        padding: 8.75rem 1.5rem;
+
+    }
+
+    .buy-wrap h2 {
+        font-size: 1.875rem;
+    }
+
+    .buy-wrap button {
+        font-size: 1rem;
+        padding: 1rem 1.5625rem;
+        margin-top: 1.875rem;
+    }
+
+    /* footer */
+
+    .footer {
+        width: 100%;
+        height: 366px;
+    }
+
+    .footer-info {
+        padding: 2.5rem 2rem;
+        gap: 1rem;
+    }
+
+    .info-list {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .info-text-wrap {
+        font-size: 0.75rem;
+    }
+
+    .info-text-wrap ul {
+        font-size: 0.75rem;
+        gap: 0.625rem;
+    }
+
+
+    .info-contact-text li {
+        font-size: 0.875rem;
+        padding-bottom: 0.625rem;
+
     }
 
 }
