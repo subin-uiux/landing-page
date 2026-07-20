@@ -44,6 +44,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
             // 마지막 슬라이드에서도 멈추지 않음
             stopOnLastSlide: false,
+
+            
         },
 
         // 마우스나 손가락으로 움직이지 못하게 설정
