@@ -370,7 +370,7 @@ $(function () {
                             left: 0,
                             opacity: 1
                         },
-                        900,
+                        800,
                         function () {
                             isSliding = false;
                         }
@@ -482,7 +482,7 @@ $(function () {
                     left: -SLIDE_DISTANCE,
                     opacity: 0
                 },
-                700,
+                600,
                 function () {
                     selectedCategory = categoryName;
                     currentIndex = 0;
@@ -522,7 +522,7 @@ $(function () {
                             left: 0,
                             opacity: 1
                         },
-                        900,
+                        700,
                         function () {
                             isSliding = false;
                             startAutoSlide();
