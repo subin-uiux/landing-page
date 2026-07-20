@@ -1950,6 +1950,14 @@ a {
 }
 
 @media(max-width: 390px) {
+    .intro-title {
+        padding: 0;
+    }
+
+    .intro-subtitle {
+        padding: 0;
+    }
+
     .intro-bracket {
         width: 50px;
         height: auto;
