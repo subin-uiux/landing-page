@@ -1478,7 +1478,7 @@ a {
         display: flex;
         flex-direction: column;
         align-items: start;
-        padding: 3.75rem 6.875rem;
+        padding: 3.75rem 3rem;
         gap: 1rem;
     }
 
