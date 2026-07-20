@@ -1,4 +1,5 @@
 
+// 리뷰카드
 
 document.addEventListener("DOMContentLoaded", function () {
     const reviewSwiperElement = document.querySelector(".reviewSwiper");
@@ -53,6 +54,9 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+
+// 모바일햄버거바
+
 const menuBtn = document.querySelector(".menu-btn");
 const mobileMenu = document.querySelector(".mobile-menu");
 const overlay = document.querySelector(".overlay");
@@ -76,6 +80,8 @@ document.querySelectorAll(".mobile-menu a").forEach((link) => {
 });
 
 
+
+// 메뉴
 $(function () {
     const $introImg = $(".intro-img");
 
