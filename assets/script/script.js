@@ -2,23 +2,40 @@
 const header = document.querySelector(".header");
 
 let lastScrollY = window.scrollY;
+let scrollReady = false;
+
+
+// 새로고침하거나 이전 페이지에서 돌아왔을 때
+window.addEventListener("pageshow", () => {
+    // 헤더를 무조건 표시
+    header.classList.remove("hide");
+
+    // 브라우저가 스크롤 위치를 복원한 다음
+    // 현재 위치를 기준점으로 다시 저장
+    setTimeout(() => {
+        lastScrollY = window.scrollY;
+        scrollReady = true;
+    }, 100);
+});
+
 
 window.addEventListener("scroll", () => {
+    // 페이지 로딩 직후 발생하는 스크롤 이벤트는 무시
+    if (!scrollReady) return;
+
     const currentScrollY = window.scrollY;
 
     // 페이지 맨 위에서는 항상 헤더 표시
     if (currentScrollY <= 0) {
         header.classList.remove("hide");
-        lastScrollY = currentScrollY;
-        return;
     }
 
-    // 아래로 스크롤
-    if (currentScrollY > lastScrollY) {
+    // 아래로 스크롤하면 숨기기
+    else if (currentScrollY > lastScrollY) {
         header.classList.add("hide");
     }
 
-    // 위로 스크롤
+    // 위로 스크롤하면 보이기
     else {
         header.classList.remove("hide");
     }
