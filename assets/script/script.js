@@ -1,3 +1,31 @@
+//헤더
+const header = document.querySelector(".header");
+
+let lastScrollY = window.scrollY;
+
+window.addEventListener("scroll", () => {
+    const currentScrollY = window.scrollY;
+
+    // 페이지 맨 위에서는 항상 헤더 표시
+    if (currentScrollY <= 0) {
+        header.classList.remove("hide");
+        lastScrollY = currentScrollY;
+        return;
+    }
+
+    // 아래로 스크롤
+    if (currentScrollY > lastScrollY) {
+        header.classList.add("hide");
+    }
+
+    // 위로 스크롤
+    else {
+        header.classList.remove("hide");
+    }
+
+    lastScrollY = currentScrollY;
+});
+
 
 // 리뷰카드
 
@@ -21,14 +49,26 @@ document.addEventListener("DOMContentLoaded", function () {
         // CSS에 입력한 카드 너비 사용
         slidesPerView: "auto",
 
-        // 카드 사이 간격
-        spaceBetween: 10,
+        // 기본값: 768px 미만에서 카드 사이 간격
+        spaceBetween: 12,
+
+        // 반응형 설정
+        breakpoints: {
+            // 화면 너비가 768px 이상일 때
+            768: {
+                spaceBetween: 16,
+            },
+
+            1024: {
+                spaceBetween: 16,
+            }
+        },
 
         // 무한 반복
         loop: true,
 
         // 반복에 사용할 슬라이드를 추가 확보
-        loopAdditionalSlides: 20,
+        loopAdditionalSlides: 30,
 
         // 숫자가 커질수록 천천히 이동
         speed: 12000,
@@ -41,17 +81,16 @@ document.addEventListener("DOMContentLoaded", function () {
             disableOnInteraction: false,
 
             // 마우스를 올려도 멈추지 않음
-            pauseOnMouseEnter: false,
+            pauseOnMouseEnter: true,
 
             // 마지막 슬라이드에서도 멈추지 않음
             stopOnLastSlide: false,
-
-
         },
 
         // 마우스나 손가락으로 움직이지 못하게 설정
         allowTouchMove: false,
     });
+    
 });
 
 var swiper = new Swiper('.checkSwiper', {
