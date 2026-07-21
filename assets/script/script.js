@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
         slidesPerView: "auto",
 
         // 카드 사이 간격
-        spaceBetween: 20,
+        spaceBetween: 10,
 
         // 무한 반복
         loop: true,
@@ -46,13 +46,49 @@ document.addEventListener("DOMContentLoaded", function () {
             // 마지막 슬라이드에서도 멈추지 않음
             stopOnLastSlide: false,
 
-            
+
         },
 
         // 마우스나 손가락으로 움직이지 못하게 설정
         allowTouchMove: false,
     });
 });
+
+var swiper = new Swiper('.checkSwiper', {
+    loop: true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    slidesPerView: 'auto',
+    spaceBetween: 20,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+});
+
+var swiper = new Swiper('.reviewSwiper', {
+    speed: 7000,
+    loop: true,
+    autoplay: {
+        delay: 0,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true,
+        reverseDirection: false,
+    },
+    slidesPerView: 'auto',
+    // centeredSlides: true,
+    spaceBetween: 30,
+
+    pagination: {
+        clickable: true,
+    },
+});
+
+
+
+
 
 
 // 모바일햄버거바
@@ -221,7 +257,7 @@ $(function () {
 
     const FORK_IMAGE = "./assets/images/fork.png";
 
-    const AUTO_SLIDE_TIME = 4000;
+    const AUTO_SLIDE_TIME = 2800;
     const SLIDE_DISTANCE = 130;
 
     let selectedCategory = "딸기";
@@ -344,7 +380,7 @@ $(function () {
          * 메인 스콘만 왼쪽으로 밀려나감
          * 오른쪽 작은 스콘은 움직이지 않음
          */
-        $mainProduct
+        $movingScone
             .stop(true, false)
             .animate(
                 {
@@ -365,7 +401,7 @@ $(function () {
                     /*
                      * 새로운 메인 스콘을 오른쪽에 배치
                      */
-                    $mainProduct.css({
+                    $movingScone.css({
                         left: SLIDE_DISTANCE,
                         opacity: 0
                     });
@@ -373,7 +409,7 @@ $(function () {
                     /*
                      * 메인 스콘만 오른쪽에서 중앙으로 들어옴
                      */
-                    $mainProduct.animate(
+                    $movingScone.animate(
                         {
                             left: 0,
                             opacity: 1

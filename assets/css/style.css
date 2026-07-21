@@ -98,7 +98,7 @@ a {
 }
 
 .ctg a:hover {
-    color: var(--background-color);
+    color: var(--point-color);
     transition-duration: 0.4s;
 }
 
@@ -252,7 +252,7 @@ a {
     background-color: var(--banner-text);
     color: #EB844A;
     border-radius: 3.125rem;
-    border: none;
+    border: 2px solid #FCEFB8;
     font-size: 1.5rem;
     font-weight: 500;
     cursor: pointer;
@@ -513,7 +513,11 @@ a {
     height: 100%;
     display: block;
     object-fit: cover;
+    transition: transform 0.4s ease;
+}
 
+.ingre-item:hover .ingre-img {
+    transform: scale(1.1);
 }
 
 .ingre-item::before {
@@ -566,6 +570,7 @@ a {
 .ingre-item:hover .ingre-text {
     opacity: 1;
 }
+
 
 /* checkpoint secttion */
 
@@ -698,11 +703,11 @@ a {
 
 .howto img {
     padding-bottom: 3.75rem;
+    transition: transform 0.3s;
 }
 
 .howto img:hover {
-    transition: transform 0.3s;
-    transform: translateY(-20px);
+    transform: translateY(-15px);
 }
 
 .howto-text h2 {
@@ -783,12 +788,14 @@ a {
 }
 
 .flavor-window {
+    position: relative;
     overflow: visible;
     display: flex;
     gap: 14rem;
 }
 
 .product-track {
+
     display: flex;
     align-items: center;
     text-align: center;
@@ -809,13 +816,12 @@ a {
     align-items: center;
 }
 
-/* 고정된 원 */
-.product-img::before {
+.product-circle {
     content: "";
 
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 54%;
+    left: 11%;
     z-index: 0;
 
     width: 420px;
@@ -826,6 +832,7 @@ a {
 
     transform: translate(-50%, -50%);
 }
+
 
 
 /* 이것만 움직임 */
@@ -993,7 +1000,7 @@ a {
     padding: 1.25rem 2.5rem;
     margin-top: 3.125rem;
     background-color: var(--background-color);
-    border: none;
+    border: 2px solid var(--background-color);
     border-radius: 2.5rem;
     cursor: pointer;
 
@@ -1147,7 +1154,7 @@ a {
 
     .intro-conts p {
         font-size: 1.75rem;
-        letter-spacing: 1.5;
+        letter-spacing: 1.5%;
     }
 
     .intro-scone {
@@ -1386,11 +1393,14 @@ a {
         gap: 4rem;
     }
 
-    .product-img::before {
-        width: 300px;
-        height: 300px;
-        top: 55%;
+    .product-circle {
+        top: 54%;
+        left: 12%;
+
+        width: 320px;
+        height: 320px;
     }
+
 
 
     /* review section */
@@ -1596,7 +1606,7 @@ a {
 
     .intro-conts p {
         font-size: 1.25rem;
-        letter-spacing: 1.5;
+        letter-spacing: 1.5%;
     }
 
     .intro-scone {
@@ -1782,15 +1792,31 @@ a {
 
     .flavor-conts {
         margin: 0;
-        padding: 2.5rem 4rem;
+        padding: 2.5rem 0;
+    }
+
+    .flavor-window {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        padding: 2rem 7rem;
     }
 
     .flavor-title {
         font-size: 1.625rem;
         padding-bottom: 1.625rem;
+        text-align: center;
+    }
+
+    .flavor-wrap {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
     }
 
     .flavor-tab {
+        display: flex;
+        flex-direction: row;
         gap: 1.25rem;
     }
 
@@ -1826,20 +1852,16 @@ a {
         gap: 0;
     }
 
-    .flavor-wrap {
-        gap: 3.8rem;
+
+    .product-circle {
+        position: absolute;
+        top: 50%;
+        left: 25%;
+
+        width: 264px;
+        height: 264px;
     }
 
-    .product-img::before {
-        width: 250px;
-        height: 250px;
-        top: 55%;
-    }
-
-    .fork-icon {
-        width: 22px;
-        height: 22px;
-    }
 
 
 
@@ -1950,8 +1972,17 @@ a {
 }
 
 @media(max-width: 390px) {
+
+    .banner-conts {
+        padding: 8rem 2rem;
+    }
+
     .intro-title {
         padding: 0;
+    }
+
+    .intro-conts p {
+        letter-spacing: -2%;
     }
 
     .intro-subtitle {
@@ -1969,6 +2000,10 @@ a {
         margin: 0;
     }
 
+    .ingre-desc {
+        line-height: 1.2;
+    }
+
 
     .recom-img img {
         width: 5rem;
@@ -1978,4 +2013,28 @@ a {
     .recommend-conts {
         gap: 2rem;
     }
+
+    .flavor-title {
+        line-height: 1.2;
+    }
+
+    .flavor-conts {
+        padding: 2.5rem;
+    }
+
+    .flavor-window {
+        position: relative;
+        padding: 2rem 3rem;
+    }
+
+
+    .product-circle {
+        position: fixed;
+        top: 46%;
+        left: 44%;
+
+        width: 240px;
+        height: 240px;
+    }
+
 }
