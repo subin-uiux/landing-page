@@ -104,7 +104,7 @@ a {
 }
 
 .ctg a:hover {
-    color:var(--sub-color-red);
+    color: var(--sub-color-red);
     transition-duration: 0.4s;
 }
 
@@ -745,154 +745,108 @@ a {
 
 
 /* menu section */
-
-.flavor-sec {
-    width: 100%;
-    overflow: hidden;
+.menu-sec {
     background-color: var(--main-color-brown);
+    padding: 0;
 }
 
-.flavor-conts {
-    width: 100%;
-    max-width: 1920px;
-
-    margin: 0;
-    padding: 6.25rem 0rem 6.25rem 15rem;
+.menu-conts {
+    padding: 6.25rem 0 6.25rem 12.5rem;
 }
 
-.flavor-title {
-    padding-bottom: 5rem;
+.menu-conts h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--background-color);
     text-align: left;
-    color: var(--background-color);
+    padding-bottom: 5rem;
 }
 
-.flavor-wrap {
+.menu-box {
     display: flex;
-    align-items: center;
-    justify-content: start;
-    min-height: 400px;
-    gap: 8rem;
+    gap: 6.25rem;
 }
 
-.flavor-tab {
+.menu-tab a {
     display: flex;
     flex-direction: column;
-    gap: 2.75rem;
-}
-
-.flavor-tab button {
-    border: none;
-    background: none;
-    font-size: 1.25rem;
-    font-weight: 500;
+    text-decoration: none;
     color: var(--background-color);
-    display: flex;
-    white-space: nowrap;
-    word-break: keep-all;
-}
-
-.flavor-window {
-    position: relative;
-    overflow: visible;
-    display: flex;
-    gap: 14rem;
-}
-
-.product-track {
-
-    display: flex;
-    align-items: center;
-    text-align: center;
-    gap: 13.75rem;
-}
-
-
-.flavor-scone-img {
-    width: 360px;
-    height: 360px;
-}
-
-
-.product-img {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.product-circle {
-    content: "";
-
-    position: absolute;
-    top: 54%;
-    left: 11%;
-    z-index: 0;
-
-    width: 420px;
-    height: 420px;
-
-    border-radius: 50%;
-    background-color: var(--background-color);
-
-    transform: translate(-50%, -50%);
-}
-
-
-
-/* 이것만 움직임 */
-.flavor-scone-img {
-    position: relative;
-    left: 0;
-    z-index: 2;
-
-    width: 300px;
-    height: 300px;
-
-    object-fit: contain;
-}
-
-
-
-.product-img img:first-child {
-    position: relative;
-    z-index: 2;
-}
-
-.other-scone {
-    opacity: 70%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-shrink: 0;
-    gap: 2.5rem;
-}
-
-.other-scone img {
-    width: 260px;
-    height: auto;
-    opacity: 50%;
-}
-
-
-.product-text {
-    position: relative;
-    z-index: 2;
-    color: var(--main-color-brown);
-    text-align: center;
-}
-
-.product-text h3 {
+    text-align: left;
     font-size: 1.25rem;
-    font-weight: 700;
+    font-weight: bold;
+    margin: 2.5rem 0;
+}
+
+.menu-tab-var {
+    align-self: center;
+}
+
+
+.menu-wrap {
+    flex: 1;
+    min-width: 0;
+}
+
+.menu-text h2 {
+    font-size: 1.25rem;
     padding-bottom: 0.625rem;
+    color: var(--main-color-brown);
+
 }
 
-.product-text p {
+.menu-text p {
     font-size: 1.125rem;
+    color: var(--main-color-brown);
 }
 
 
+.menuSwiper .swiper {
+    width: 100%;
+    height: 100%;
+}
 
+.menuSwiper .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.menuSwiper .swiper {
+    position: relative;
+}
+
+
+.menuSwiper .swiper:before {
+    display: block;
+    content: '';
+    width: 320px;
+    height: 320px;
+    background-color: #fff;
+    position: absolute;
+    top: 40%;
+    left: 120px;
+}
+
+.menuSwiper .swiper-slide img {
+    width: 200px;
+    opacity: 0.5;
+}
+
+
+.menuSwiper .swiper-slide-active img {
+    width: 260px;
+    opacity: 1;
+}
+
+.menuSwiper .swiper-slide .menu-text {
+    opacity: 0;
+}
+
+.menuSwiper .swiper-slide-active .menu-text {
+    opacity: 1;
+}
 
 /* review section */
 
