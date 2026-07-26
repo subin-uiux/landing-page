@@ -194,3 +194,15 @@ var swiper = new Swiper('.menuSwiper', {
         },
     },
 });
+
+// $(function () {
+//     $('.tabs').click(function () {
+//         const tabIndex = $(this).parent().index();
+
+//         $('.tabs').removeClass('on');
+//         $(this).addClass('on');
+
+//         $('.menu-content').removeClass('on');
+//         $('.menu-content').eq(tabIndex).addClass('on');
+//     });
+// });
