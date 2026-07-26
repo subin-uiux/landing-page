@@ -10,11 +10,32 @@
     .menu-conts h2{ 
       font-size: 2.5rem;
     }
-    
-    .menu-tab a {
-      text-decoration: none;
+
+    .tab-btn {
+      font-size: 1.25rem;
+      color: #FFFAF2;
+      font-weight: 700;
+    }
+    .menu-tab-var {
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
     }
 
+    .menu-text h2{
+      font-size: 1.25rem;
+
+    }
+
+    .menu-square {
+      flex-direction: column;
+      display: none;
+    }
+
+    .menu-square .on {
+      display: block;
+    }
+    
     .swiper {
       width: 100%;
       height: 100%;
@@ -27,7 +48,6 @@
       display: flex;
       justify-content: center;
       align-items: center;
-
     }
 
 
@@ -40,10 +60,10 @@
       content: '';
       width: 300px;
       height: 300px;
-      background-color: red;
+      background-color: #fff;
       position: absolute;
       top: 40%;
-      left: 120px;
+      left: 0px;
     }
 
     .swiper-slide img {
