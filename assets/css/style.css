@@ -104,7 +104,7 @@ a {
 }
 
 .ctg a:hover {
-    color: var(--sub-color-red);
+    color:var(--sub-color-red);
     transition-duration: 0.4s;
 }
 
@@ -745,108 +745,172 @@ a {
 
 
 /* menu section */
-.menu-sec {
+
+.flavor-sec {
+    width: 100%;
+    overflow: hidden;
     background-color: var(--main-color-brown);
-    padding: 0;
 }
 
-.menu-conts {
-    padding: 6.25rem 0 6.25rem 12.5rem;
+.flavor-conts {
+    width: 100%;
+    max-width: 1920px;
+
+    margin: 0;
+    padding: 6.25rem 0rem 6.25rem 15rem;
 }
 
-.menu-conts h2 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: var(--background-color);
-    text-align: left;
+.flavor-title {
     padding-bottom: 5rem;
+    text-align: left;
+    color: var(--background-color);
 }
 
-.menu-box {
+.flavor-wrap {
     display: flex;
-    gap: 6.25rem;
+    align-items: center;
+    justify-content: start;
+    min-height: 400px;
+    gap: 8rem;
 }
 
-.menu-tab a {
+.flavor-tab {
     display: flex;
     flex-direction: column;
-    text-decoration: none;
+    gap: 2.75rem;
+}
+
+.flavor-tab button {
+    border: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: 500;
     color: var(--background-color);
-    text-align: left;
-    font-size: 1.25rem;
-    font-weight: bold;
-    margin: 2.5rem 0;
+    display: flex;
+    align-items: center;
+    line-height: 1;
+    white-space: nowrap;
+    word-break: keep-all;
 }
 
-.menu-tab-var {
-    align-self: center;
+.flavor-window {
+    position: relative;
+    overflow: visible;
+    display: flex;
+    gap: 14rem;
+}
+
+.product-track {
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 10rem;
+}
+
+/* 원 기준 틀: 원은 고정, product-img만 슬라이드 */
+.product-stage {
+    position: relative;
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 420px;
+    height: 420px;
 }
 
 
-.menu-wrap {
-    flex: 1;
-    min-width: 0;
-}
-
-.menu-text h2 {
-    font-size: 1.25rem;
-    padding-bottom: 0.625rem;
-    color: var(--main-color-brown);
-
-}
-
-.menu-text p {
-    font-size: 1.125rem;
-    color: var(--main-color-brown);
+.flavor-scone-img {
+    width: 360px;
+    height: 360px;
 }
 
 
-.menuSwiper .swiper {
+.product-img {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    padding: 0 2.5rem;
+}
+
+.product-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 0;
+
     width: 100%;
     height: 100%;
+
+    border-radius: 50%;
+    background-color: var(--background-color);
+
+    transform: translate(-50%, -50%);
 }
 
-.menuSwiper .swiper-slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 
-.menuSwiper .swiper {
+/* 이것만 움직임 */
+.flavor-scone-img {
     position: relative;
+    left: 0;
+    z-index: 2;
+
+    width: 300px;
+    height: 300px;
+
+    object-fit: contain;
 }
 
 
-.menuSwiper .swiper:before {
-    display: block;
-    content: '';
-    width: 320px;
-    height: 320px;
-    background-color: #fff;
-    position: absolute;
-    top: 40%;
-    left: 120px;
+
+.product-img img:first-child {
+    position: relative;
+    z-index: 2;
 }
 
-.menuSwiper .swiper-slide img {
-    width: 200px;
-    opacity: 0.5;
+.other-scone {
+    opacity: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-shrink: 0;
+    gap: 2.5rem;
 }
 
-
-.menuSwiper .swiper-slide-active img {
+.other-scone img {
     width: 260px;
-    opacity: 1;
+    height: auto;
+    opacity: 50%;
 }
 
-.menuSwiper .swiper-slide .menu-text {
-    opacity: 0;
+
+.product-text {
+    position: relative;
+    z-index: 2;
+    color: var(--main-color-brown);
+    text-align: center;
+    word-break: keep-all;
 }
 
-.menuSwiper .swiper-slide-active .menu-text {
-    opacity: 1;
+.product-text h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding-bottom: 0.625rem;
 }
+
+.product-text p {
+    font-size: 1.125rem;
+}
+
+
+
 
 /* review section */
 
@@ -1322,7 +1386,7 @@ a {
     }
 
     .product-track {
-        gap: 4.5rem;
+        gap: 1.5rem;
     }
 
     .flavor-scone-img {
@@ -1351,10 +1415,7 @@ a {
         gap: 4rem;
     }
 
-    .product-circle {
-        top: 54%;
-        left: 12%;
-
+    .product-stage {
         width: 320px;
         height: 320px;
     }
@@ -1748,7 +1809,8 @@ a {
         position: relative;
         width: 100%;
         overflow: hidden;
-        padding: 2rem 7rem;
+        padding: 2rem 0;
+        justify-content: center;
     }
 
     .flavor-title {
@@ -1776,7 +1838,8 @@ a {
     }
 
     .product-track {
-        gap: 2.5rem;
+        justify-content: center;
+        gap: 0;
     }
 
     .flavor-scone-img {
@@ -1798,17 +1861,17 @@ a {
     }
 
     .other-scone {
-        gap: 0;
+        display: none;
     }
 
 
-    .product-circle {
-        position: absolute;
-        top: 50%;
-        left: 25%;
-
+    .product-stage {
         width: 264px;
         height: 264px;
+    }
+
+    .product-img {
+        padding: 0 1.5rem;
     }
 
 
@@ -1970,15 +2033,11 @@ a {
 
     .flavor-window {
         position: relative;
-        padding: 2rem 3rem;
+        padding: 2rem 0;
     }
 
 
-    .product-circle {
-        position: absolute;
-        top: 53%;
-        left: 43%;
-
+    .product-stage {
         width: 246px;
         height: 246px;
     }
