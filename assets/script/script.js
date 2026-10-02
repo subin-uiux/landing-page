@@ -694,3 +694,31 @@ $(function () {
     renderProducts();
     startAutoSlide();
 });
+
+
+// 포트폴리오 안내 팝업
+const noticePopup = document.querySelector(".notice-popup");
+const noticeClose = document.querySelector(".notice-close");
+
+function closeNotice() {
+    noticePopup.classList.add("hide");
+    document.body.style.overflow = "";
+}
+
+document.body.style.overflow = "hidden";
+noticeClose.focus();
+
+noticeClose.addEventListener("click", closeNotice);
+
+// 바깥 어두운 영역 클릭 시 닫기
+noticePopup.addEventListener("click", (e) => {
+    if (e.target === noticePopup) {
+        closeNotice();
+    }
+});
+
+document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && !noticePopup.classList.contains("hide")) {
+        closeNotice();
+    }
+});

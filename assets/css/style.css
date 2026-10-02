@@ -39,6 +39,61 @@ a {
 }
 
 
+/* portfolio notice popup */
+
+.notice-popup {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 1.25rem;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.notice-popup.hide {
+    display: none;
+}
+
+.notice-box {
+    width: 100%;
+    max-width: 360px;
+    padding: 2.5rem 2rem 2rem;
+
+    border-radius: 1.25rem;
+    background-color: var(--background-color);
+    text-align: center;
+}
+
+.notice-title {
+    padding-bottom: 0.75rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--main-color-brown);
+}
+
+.notice-text {
+    padding-bottom: 1.75rem;
+    font-size: 1.125rem;
+    color: var(--main-color-brown);
+    word-break: keep-all;
+}
+
+.notice-close {
+    width: 100%;
+    padding: 0.875rem 0;
+
+    border-radius: 0.75rem;
+    background-color: var(--main-color-brown);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--background-color);
+}
+
+
 /* 공통 css */
 
 .container {
