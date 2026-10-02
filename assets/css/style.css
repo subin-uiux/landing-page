@@ -227,7 +227,7 @@ a {
 
 
     position: relative;
-    background: url(../images/banner-img.png) no-repeat center / cover;
+    background: url(../images/banner-img.webp) no-repeat center / cover;
 }
 
 
@@ -1003,7 +1003,7 @@ a {
     max-width: 1920px;
     margin: 0 auto;
 
-    background: url(../images/buy-img.png) no-repeat center / cover;
+    background: url(../images/buy-img.webp) no-repeat center / cover;
 }
 
 .buy-wrap {
@@ -1124,12 +1124,12 @@ a {
 
     /* banner section */
     .banner-sec {
-        background: url(../images/banner-img-pad.png) no-repeat center / cover;
+        background: url(../images/banner-img-pad.webp) no-repeat center / cover;
         height: 45rem;
     }
 
     .banner-shape {
-        background: url(../images/banner-shape-pad.png) no-repeat center / cover;
+        background: url(../images/banner-shape-pad.webp) no-repeat center / cover;
     }
 
     .banner-conts {
@@ -1571,12 +1571,12 @@ a {
 
     /* banner section */
     .banner-sec {
-        background: url(../images/banner-img-mo.png) no-repeat center / cover;
+        background: url(../images/banner-img-mo.webp) no-repeat center / cover;
         height: 30.625rem;
     }
 
     .banner-shape {
-        background: url(../images/banner-shape-mo.png) no-repeat center / cover;
+        background: url(../images/banner-shape-mo.webp) no-repeat center / cover;
     }
 
     .banner-conts {

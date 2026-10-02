@@ -217,22 +217,22 @@ $(function () {
             {
                 name: "딸기 품은 딸기 삼각이",
                 kcal: 314,
-                image: "./assets/images/strawberry1.png"
+                image: "./assets/images/strawberry1.webp"
             },
             {
                 name: "화이트 청크 딸기 삼각이",
                 kcal: 222,
-                image: "./assets/images/strawberry2.png"
+                image: "./assets/images/strawberry2.webp"
             },
             {
                 name: "딸기 삼각이",
                 kcal: 242,
-                image: "./assets/images/strawberry3.png"
+                image: "./assets/images/strawberry3.webp"
             },
             {
                 name: "초코에 빠진 딸기 삼각이",
                 kcal: 250,
-                image: "./assets/images/strawberry4.png"
+                image: "./assets/images/strawberry4.webp"
             }
         ],
 
@@ -240,22 +240,22 @@ $(function () {
             {
                 name: "누텔라 헤이즐넛 삼각이",
                 kcal: 242,
-                image: "./assets/images/choco1.png"
+                image: "./assets/images/choco1.webp"
             },
             {
                 name: "진정한 타로송이 삼각이",
                 kcal: 308,
-                image: "./assets/images/choco2.png"
+                image: "./assets/images/choco2.webp"
             },
             {
                 name: "치즈송이 삼각이",
                 kcal: 260,
-                image: "./assets/images/choco3.png"
+                image: "./assets/images/choco3.webp"
             },
             {
                 name: "피스타치오 빼빼로 삼각이",
                 kcal: 260,
-                image: "./assets/images/choco4.png"
+                image: "./assets/images/choco4.webp"
             }
         ],
 
@@ -263,22 +263,22 @@ $(function () {
             {
                 name: "카카오 마차차 삼각이",
                 kcal: 235,
-                image: "./assets/images/matcha1.png"
+                image: "./assets/images/matcha1.webp"
             },
             {
                 name: "딸기 말차(층층) 삼각이",
                 kcal: 220,
-                image: "./assets/images/matcha2.png"
+                image: "./assets/images/matcha2.webp"
             },
             {
                 name: "말차나무 초코 숲 삼각이",
                 kcal: 216,
-                image: "./assets/images/matcha3.png"
+                image: "./assets/images/matcha3.webp"
             },
             {
                 name: "제주 성읍 호말 삼각이",
                 kcal: 208,
-                image: "./assets/images/matcha4.png"
+                image: "./assets/images/matcha4.webp"
             }
         ],
 
@@ -286,22 +286,22 @@ $(function () {
             {
                 name: "로스팅 호지 피칸 삼각이",
                 kcal: 220,
-                image: "./assets/images/nuts1.png"
+                image: "./assets/images/nuts1.webp"
             },
             {
                 name: "하루견과 삼각이",
                 kcal: 231,
-                image: "./assets/images/nuts2.png"
+                image: "./assets/images/nuts2.webp"
             },
             {
                 name: "넛츠 초코칩 삼각이",
                 kcal: 217,
-                image: "./assets/images/nuts3.png"
+                image: "./assets/images/nuts3.webp"
             },
             {
                 name: "솔티 너티 초코뱅 삼각이",
                 kcal: 233,
-                image: "./assets/images/nuts4.png"
+                image: "./assets/images/nuts4.webp"
             }
         ]
     };
@@ -311,7 +311,7 @@ $(function () {
     // 2. 기본 설정
     // =====================================
 
-    const FORK_IMAGE = "./assets/images/fork.png";
+    const FORK_IMAGE = "./assets/images/fork.webp";
 
     const AUTO_SLIDE_TIME = 2800;
 
@@ -540,7 +540,7 @@ $(function () {
         const $forkIcon = $("<img>", {
             class: "fork-icon",
             src: FORK_IMAGE,
-            alt: ""
+            alt: "선택된 카테고리 포크 아이콘"
         });
 
         $forkIcon.css({

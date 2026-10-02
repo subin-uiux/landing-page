@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://yundar-landingpage.vercel.app/sitemap.xml
